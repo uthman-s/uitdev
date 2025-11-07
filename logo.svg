@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#2b6cb0" stroke-width="2"/>
+  
+  <!-- UIT Text Logo -->
+  <text x="100" y="115" font-size="72" font-weight="bold" text-anchor="middle" fill="#2b6cb0" font-family="Arial, sans-serif">
+    UIT
+  </text>
+  
+  <!-- Subtitle accent -->
+  <line x1="40" y1="135" x2="160" y2="135" stroke="#2b6cb0" stroke-width="2"/>
+  
+  <!-- Small accent dots -->
+  <circle cx="40" cy="155" r="4" fill="#2b6cb0"/>
+  <circle cx="100" cy="155" r="4" fill="#2b6cb0"/>
+  <circle cx="160" cy="155" r="4" fill="#2b6cb0"/>
+</svg>

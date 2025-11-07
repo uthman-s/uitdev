@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Uthman Sayedi — UIT | App-udvikling & Digitalisering</title>
-  <meta name="description" content="Uthman Sayedi — Softwareingeniør hos Novo. App-udvikling (Flutter, Android), automatisering og digital transformation. Momtiful." />
+  <title data-en="Uthman Sayedi — UIT | App Development & Digitalization" data-da="Uthman Sayedi — UIT | App-udvikling & Digitalisering">Uthman Sayedi — UIT | App Development & Digitalization</title>
+  <meta name="description" content="Uthman Sayedi — Software Engineer at Novo. App development (Flutter, Android), automation and digital transformation. Momtiful." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:," />
 </head>
@@ -13,14 +13,17 @@
     <div class="container header-inner">
       <div class="brand">
         <h1>UIT</h1>
-        <p class="tagline">Uthman Sayedi — Softwareingeniør & App-udvikler</p>
+        <p class="tagline" data-en="Uthman Sayedi — Software Engineer & App Developer" data-da="Uthman Sayedi — Softwareingeniør & App-udvikler">Uthman Sayedi — Software Engineer & App Developer</p>
       </div>
-      <nav class="main-nav" aria-label="Hovednavigation">
-        <a href="#about">Om mig</a>
-        <a href="#services">Ydelser</a>
-        <a href="#projects">Projekter</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
+      <div class="header-controls">
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="#about" data-en="About" data-da="Om mig">About</a>
+          <a href="#services" data-en="Services" data-da="Ydelser">Services</a>
+          <a href="#projects" data-en="Projects" data-da="Projekter">Projects</a>
+          <a href="#contact" data-en="Contact" data-da="Kontakt">Contact</a>
+        </nav>
+        <button class="lang-toggle" id="langToggle" data-en="Dansk" data-da="English">Dansk</button>
+      </div>
     </div>
   </header>
 
@@ -28,19 +31,19 @@
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h2 id="hero-title">Hej — jeg er Uthman</h2>
-          <p class="lead">Softwareingeniør med fokus på app-udvikling og digitalisering. Jeg arbejder i Novo og udvikler desuden appen <strong>Momtiful</strong>.</p>
+          <h2 id="hero-title" data-en="Hi — I'm Uthman" data-da="Hej — jeg er Uthman">Hi — I'm Uthman</h2>
+          <p class="lead" data-en="Software engineer focused on app development and digitalization. I work at Novo and also develop the app Momtiful." data-da="Softwareingeniør med fokus på app-udvikling og digitalisering. Jeg arbejder i Novo og udvikler desuden appen Momtiful.">Software engineer focused on app development and digitalization. I work at Novo and also develop the app Momtiful.</p>
           <p class="cta-row">
-            <a class="btn primary" href="#contact">Kontakt mig</a>
-            <a class="btn outline" href="#services">Se ydelser</a>
+            <a class="btn primary" href="#contact" data-en="Contact Me" data-da="Kontakt mig">Contact Me</a>
+            <a class="btn outline" href="#services" data-en="View Services" data-da="Se ydelser">View Services</a>
           </p>
         </div>
         <div class="hero-card">
           <ul>
-            <li><strong>Firma:</strong> UIT</li>
-            <li><strong>Email:</strong> kontakt@uitdev.dk</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/uthman-sayedi-a48a2067/" target="_blank" rel="noopener">Uthman Sayedi</a></li>
-            <li><strong>App:</strong> Momtiful</li>
+            <li><strong data-en="Company:" data-da="Firma:">Company:</strong> UIT</li>
+            <li><strong data-en="Email:" data-da="Email:">Email:</strong> contact@uitdev.com</li>
+            <li><strong data-en="LinkedIn:" data-da="LinkedIn:">LinkedIn:</strong> <a href="https://www.linkedin.com/in/uthman-sayedi-a48a2067/" target="_blank" rel="noopener">Uthman Sayedi</a></li>
+            <li><strong data-en="App:" data-da="App:">App:</strong> Momtiful</li>
           </ul>
         </div>
       </div>
@@ -48,30 +51,30 @@
 
     <section class="about" id="about">
       <div class="container">
-        <h3>Om mig</h3>
-        <p>Jeg hedder Uthman Sayedi og arbejder som softwareingeniør hos Novo. Mit arbejde fokuserer på at gøre processer digitale, effektive og brugervenlige — særligt gennem mobile apps. Jeg elsker at bygge løsninger, der gør hverdagen enklere for både virksomheder og brugere.</p>
+        <h3 data-en="About Me" data-da="Om mig">About Me</h3>
+        <p data-en="My name is Uthman Sayedi and I work as a software engineer at Novo. My work focuses on making processes digital, efficient, and user-friendly — particularly through mobile apps. I specialize in Flutter and native Android development, with a passion for clean code, performance optimization, and digital transformation." data-da="Jeg hedder Uthman Sayedi og arbejder som softwareingeniør hos Novo. Mit arbejde fokuserer på at gøre processer digitale, effektive og brugervenlige — særligt gennem mobile apps. Jeg er specialized i Flutter og native Android-udvikling, med passion for clean code, performance-optimering og digital transformation.">My name is Uthman Sayedi and I work as a software engineer at Novo. My work focuses on making processes digital, efficient, and user-friendly — particularly through mobile apps. I specialize in Flutter and native Android development, with a passion for clean code, performance optimization, and digital transformation.</p>
       </div>
     </section>
 
     <section class="services" id="services">
       <div class="container">
-        <h3>Ydelser</h3>
+        <h3 data-en="Services" data-da="Ydelser">Services</h3>
         <div class="service-grid">
           <div class="service">
-            <h4>App-udvikling</h4>
-            <p>Udvikling af mobile apps i Flutter og native Android. Fokus på performance, god UX og vedligeholdelig kode.</p>
+            <h4 data-en="App Development" data-da="App-udvikling">App Development</h4>
+            <p data-en="Development of mobile apps in Flutter and native Android. Focus on performance, great UX, and maintainable code." data-da="Udvikling af mobile apps i Flutter og native Android. Fokus på performance, god UX og vedligeholdelig kode.">Development of mobile apps in Flutter and native Android. Focus on performance, great UX, and maintainable code.</p>
           </div>
           <div class="service">
-            <h4>Automatisering</h4>
-            <p>Automatiser gentagne processer for at spare tid og reducere fejl. CI/CD, scripts, cloud-integration og workflows.</p>
+            <h4 data-en="Automation" data-da="Automatisering">Automation</h4>
+            <p data-en="Automate repetitive processes to save time and reduce errors. CI/CD, scripts, cloud integration, and workflows." data-da="Automatiser gentagne processer for at spare tid og reducere fejl. CI/CD, scripts, cloud-integration og workflows.">Automate repetitive processes to save time and reduce errors. CI/CD, scripts, cloud integration, and workflows.</p>
           </div>
           <div class="service">
-            <h4>Digital transformation</h4>
-            <p>Strategisk rådgivning og teknisk implementering for at modernisere arbejdsprocesser og øge digital modenhed.</p>
+            <h4 data-en="Digital Transformation" data-da="Digital transformation">Digital Transformation</h4>
+            <p data-en="Strategic consulting and technical implementation to modernize workflows and increase digital maturity." data-da="Strategisk rådgivning og teknisk implementering for at modernisere arbejdsprocesser og øge digital modenhed.">Strategic consulting and technical implementation to modernize workflows and increase digital maturity.</p>
           </div>
           <div class="service">
-            <h4>Rådgivning & Support</h4>
-            <p>Teknisk vejledning, arkitekturreviews og løbende support. Hjælp til at vælge teknologier og løsninger, der skalerer.</p>
+            <h4 data-en="Consulting & Support" data-da="Rådgivning & Support">Consulting & Support</h4>
+            <p data-en="Technical guidance, architecture reviews, and ongoing support. Help choosing technologies and solutions that scale." data-da="Teknisk vejledning, arkitekturreviews og løbende support. Hjælp til at vælge teknologier og løsninger, der skalerer.">Technical guidance, architecture reviews, and ongoing support. Help choosing technologies and solutions that scale.</p>
           </div>
         </div>
       </div>
@@ -79,34 +82,33 @@
 
     <section class="projects" id="projects">
       <div class="container">
-        <h3>Udvalgte projekter</h3>
+        <h3 data-en="Featured Projects" data-da="Udvalgte projekter">Featured Projects</h3>
         <div class="project">
           <h4>Momtiful</h4>
-          <p>En app jeg udvikler — designet til at gøre [indsæt kort beskrivelse af appens formål]. Bygget i Flutter med fokus på cross-platform ydeevne og en intuitiv brugeroplevelse.</p>
+          <p data-en="An app I'm developing — designed to make moments memorable. Built in Flutter with focus on cross-platform performance and an intuitive user experience." data-da="En app jeg udvikler — designet til at gøre øjeblikke mindeværdige. Bygget i Flutter med fokus på cross-platform ydeevne og en intuitiv brugeroplevelse.">An app I'm developing — designed to make moments memorable. Built in Flutter with focus on cross-platform performance and an intuitive user experience.</p>
         </div>
-        <!-- Tilføj flere projekter her efter behov -->
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="container">
-        <h3>Kontakt</h3>
-        <p>Send en email eller forbind via LinkedIn. Jeg besvarer normalt henvendelser inden for få arbejdsdage.</p>
+        <h3 data-en="Contact" data-da="Kontakt">Contact</h3>
+        <p data-en="Send an email or connect via LinkedIn. I typically respond to inquiries within a few business days." data-da="Send en email eller forbind via LinkedIn. Jeg besvarer normalt henvendelser inden for få arbejdsdage.">Send an email or connect via LinkedIn. I typically respond to inquiries within a few business days.</p>
 
         <div class="contact-grid">
           <div class="contact-card">
-            <h4>Email</h4>
-            <p><a href="mailto:kontakt@uitdev.dk">kontakt@uitdev.dk</a></p>
+            <h4 data-en="Email" data-da="Email">Email</h4>
+            <p><a href="mailto:contact@uitdev.com">contact@uitdev.com</a></p>
           </div>
 
           <div class="contact-card">
-            <h4>LinkedIn</h4>
+            <h4 data-en="LinkedIn" data-da="LinkedIn">LinkedIn</h4>
             <p><a href="https://www.linkedin.com/in/uthman-sayedi-a48a2067/" target="_blank" rel="noopener">Uthman Sayedi</a></p>
           </div>
 
           <div class="contact-card">
-            <h4>Firma & Domæne</h4>
-            <p>UIT — uitdev.dk</p>
+            <h4 data-en="Company & Domain" data-da="Firma & Domæne">Company & Domain</h4>
+            <p>UIT — uitdev.com</p>
           </div>
         </div>
 
@@ -116,7 +118,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <small>&copy; <span id="year"></span> UIT — Uthman Sayedi • <a href="mailto:kontakt@uitdev.dk">kontakt@uitdev.dk</a></small>
+      <small>&copy; <span id="year"></span> UIT — Uthman Sayedi • <a href="mailto:contact@uitdev.com">contact@uitdev.com</a></small>
     </div>
   </footer>
 
