@@ -12,8 +12,11 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <h1>UIT</h1>
-        <p class="tagline" data-en="Uthman Sayedi — Software Engineer & App Developer" data-da="Uthman Sayedi — Softwareingeniør & App-udvikler">Uthman Sayedi — Software Engineer & App Developer</p>
+        <img src="logo.svg" alt="UIT Logo" class="logo" />
+        <div class="brand-text">
+          <h1>UIT</h1>
+          <p class="tagline" data-en="Uthman Sayedi — Software Engineer & App Developer" data-da="Uthman Sayedi — Softwareingeniør & App-udvikler">Uthman Sayedi — Software Engineer & App Developer</p>
+        </div>
       </div>
       <div class="header-controls">
         <nav class="main-nav" aria-label="Main Navigation">
@@ -22,7 +25,10 @@
           <a href="#projects" data-en="Projects" data-da="Projekter">Projects</a>
           <a href="#contact" data-en="Contact" data-da="Kontakt">Contact</a>
         </nav>
-        <button class="lang-toggle" id="langToggle" data-en="Dansk" data-da="English">Dansk</button>
+        <select class="lang-select" id="langSelect">
+          <option value="en">English</option>
+          <option value="da">Dansk</option>
+        </select>
       </div>
     </div>
   </header>

@@ -44,6 +44,19 @@ body{
   color:var(--primary);
   letter-spacing:0.6px;
 }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
 .tagline{margin:0;color:var(--muted);font-size:13px}
 
 .header-controls{
@@ -61,21 +74,26 @@ body{
 }
 .main-nav a:hover{color:var(--primary)}
 
-.lang-toggle{
-  background:transparent;
-  border:2px solid var(--primary);
-  color:var(--primary);
-  padding:6px 12px;
-  border-radius:6px;
-  font-weight:600;
-  font-size:12px;
-  cursor:pointer;
-  transition:all 0.3s ease;
+.lang-select{
+  background: white;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.lang-toggle:hover{
-  background:var(--primary);
-  color:white;
+.lang-select:hover{
+  background: var(--primary);
+  color: white;
+}
+
+.lang-select:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .hero{

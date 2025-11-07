@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Language switching
   var currentLang = localStorage.getItem('lang') || 'en';
-  var langToggle = document.getElementById('langToggle');
+  var langSelect = document.getElementById('langSelect');
   
   // Set initial language based on browser or localStorage
   if(!localStorage.getItem('lang')) {
@@ -20,10 +20,13 @@ document.addEventListener('DOMContentLoaded', function(){
   // Apply initial language
   setLanguage(currentLang);
   
-  // Language toggle button click handler
-  if(langToggle) {
-    langToggle.addEventListener('click', function(){
-      currentLang = currentLang === 'en' ? 'da' : 'en';
+  // Set the dropdown to the current language
+  if(langSelect) {
+    langSelect.value = currentLang;
+    
+    // Language select change handler
+    langSelect.addEventListener('change', function(){
+      currentLang = langSelect.value;
       localStorage.setItem('lang', currentLang);
       setLanguage(currentLang);
     });
@@ -32,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function setLanguage(lang) {
   var elements = document.querySelectorAll('[data-en][data-da]');
-  var langToggle = document.getElementById('langToggle');
   
   elements.forEach(function(el) {
     if(lang === 'en') {
@@ -42,14 +44,10 @@ function setLanguage(lang) {
     }
   });
   
-  // Update toggle button text
-  if(langToggle) {
-    if(lang === 'en') {
-      langToggle.textContent = 'Dansk';
-      document.documentElement.lang = 'en';
-    } else {
-      langToggle.textContent = 'English';
-      document.documentElement.lang = 'da';
-    }
+  // Update document language
+  if(lang === 'en') {
+    document.documentElement.lang = 'en';
+  } else {
+    document.documentElement.lang = 'da';
   }
 }
