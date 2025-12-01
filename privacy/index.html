@@ -1,95 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy — uitdev.dk</title>
-  <meta name="description" content="Privacy policy for https://uitdev.dk (uitdev). Learn what data we collect and how we use it." />
-  <link rel="canonical" href="https://uitdev.dk/privacy" />
+  <title>Privacy Policy / Fortrolighedspolitik — TankBilligt</title>
   <style>
-    :root{--bg:#f7f8fb;--card:#fff;--muted:#6b7280;--accent:#0d6efd}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;margin:0;background:var(--bg);color:#0f1724}
-    .container{max-width:900px;margin:48px auto;padding:24px}
-    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
-    h1{font-size:1.5rem;margin:0}
-    .meta{color:var(--muted);font-size:0.95rem}
-    .card{background:var(--card);border-radius:10px;padding:26px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
-    h2{margin-top:24px}
-    ul{margin-left:1.2rem}
-    footer{margin-top:28px;color:var(--muted);font-size:0.9rem}
-    a{color:var(--accent)}
-    .small{font-size:0.95rem;color:var(--muted)}
+    :root{
+      --bg:#f7f8fb; --card:#fff; --text:#0f1724; --muted:#51606a;
+      --accent:#0b63c6;
+    }
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg); color:var(--text); margin:0; padding:24px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:900px; margin:0 auto;}
+    header{display:flex; gap:8px; align-items:center; justify-content:space-between; margin-bottom:16px;}
+    .lang-switch{display:flex; gap:8px;}
+    button{
+      background:#fff; border:1px solid #d0d7de; padding:8px 12px; border-radius:6px; cursor:pointer;
+    }
+    button.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+    .card{background:var(--card); padding:20px; border-radius:10px; box-shadow:0 1px 2px rgba(16,24,40,0.04);}
+    h1{font-size:1.25rem; margin:0 0 8px 0;}
+    h2{font-size:1rem; margin-top:18px;}
+    p{color:var(--muted); line-height:1.5;}
+    nav small{color:var(--muted);}
+    .meta{font-size:0.9rem; color:var(--muted); margin-bottom:12px;}
+    footer{margin-top:18px; font-size:0.85rem; color:var(--muted);}
+    @media (prefers-color-scheme:dark){
+      :root{--bg:#071024; --card:#07182a; --text:#e6eef8; --muted:#9fb3d6; --accent:#3aa0ff;}
+      button{background:transparent; border-color:rgba(255,255,255,0.08);}
+    }
   </style>
 </head>
 <body>
-  <main class="container">
+  <div class="container">
     <header>
       <div>
-        <h1>Privacy Policy</h1>
-        <div class="meta">Effective date: 2025-12-01</div>
+        <h1 id="page-title">Privacy Policy / Fortrolighedspolitik — TankBilligt</h1>
+        <div class="meta" id="effective-date">Effective date / Ikrafttrædelsesdato: 1. december 2025</div>
+      </div>
+      <div class="lang-switch" role="tablist" aria-label="Language switch">
+        <button id="btn-da" aria-controls="da">Dansk</button>
+        <button id="btn-en" aria-controls="en">English</button>
       </div>
     </header>
 
-    <section class="card">
-      <p class="small">Welcome to uitdev.dk ("we", "us", "our"). This Privacy Policy explains what information we collect, how we use it, and the choices you have regarding your information when you visit <a href="https://uitdev.dk">https://uitdev.dk</a> (the "Service").</p>
+    <main class="card">
+      <article id="da" lang="da">
+        <h2>Fortrolighedspolitik — TankBilligt (Dansk)</h2>
+        <p>Ikrafttrædelsesdato: 1. december 2025</p>
 
-      <h2>1. Information we collect</h2>
-      <p class="small">We may collect and process the following categories of information:</p>
-      <ul>
-        <li><strong>Information you provide directly:</strong> contact form messages, email addresses, or other information you choose to submit.</li>
-        <li><strong>Automatically collected data:</strong> server logs, usage data, IP addresses, browser and device information, pages visited, and timestamps.</li>
-        <li><strong>Cookies and tracking technologies:</strong> small files placed on your device to remember preferences and to help analyze site usage.</li>
-      </ul>
+        <p>Denne fortrolighedspolitik beskriver, hvordan TankBilligt ("vi", "os" eller "Appen") indsamler, bruger, videregiver og beskytter oplysninger, når du bruger vores mobilapplikation "TankBilligt" ("Appen"). TankBilligt hjælper brugere i Danmark med at finde og sammenligne benzinpriser og lokalisere nærliggende tankstationer.</p>
 
-      <h2>2. How we use your information</h2>
-      <p class="small">We use the information we collect for purposes including:</p>
-      <ul>
-        <li>Operating, maintaining, and improving the Service.</li>
-        <li>Responding to your inquiries or requests.</li>
-        <li>Analyzing usage patterns and trends to improve user experience.</li>
-        <li>Complying with legal obligations and preventing abuse or fraud.</li>
-      </ul>
+        <h3>Kontakt</h3>
+        <p>Dataansvarlig: UIT<br/>E-mail: <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a></p>
 
-      <h2>3. Cookies and similar technologies</h2>
-      <p class="small">We use cookies and similar technologies for functionality and analytics. You can configure your browser to block or delete cookies, but some features of the Service may not work properly if cookies are disabled.</p>
+        <h3>Oversigt — kort resumé</h3>
+        <ul>
+          <li>Formål: Appen viser nærliggende tankstationer, aktuelle priser og rutevejledning; giver mulighed for favoritter og prisalarmer.</li>
+          <li>Nøgledata: Enhedsplacering (kun med tilladelse) og data du eksplicit gemmer (favoritter, alarmer).</li>
+          <li>Tredjepartstjenester: Supabase, Google Maps og Geolocator.</li>
+        </ul>
 
-      <h2>4. Third-party services</h2>
-      <p class="small">We may use third-party services to operate and improve the site (e.g., analytics providers, performance and security services). These providers may collect information about your use of the Service according to their own privacy policies. Examples may include Google Analytics, Cloudflare, or others. We do not control third-party practices — please review their privacy policies directly.</p>
+        <h3>1. Hvilke oplysninger vi indsamler</h3>
+        <h4>A. Placering (nødvendig for kernefunktioner)</h4>
+        <p>Præcis enhedsplacering (GPS og netværk), mens Appen er i brug og du har givet tilladelse. Placering bruges i sessionen til kortfunktioner. Hvis du gemmer en lokation (fx favorit), gemmes den i din Supabase-post eller lokalt.</p>
 
-      <h2>5. Legal basis for processing (if you are in the EEA)</h2>
-      <p class="small">If you are located in the European Economic Area (EEA), we rely on legal bases such as:</p>
-      <ul>
-        <li>Consent — where required, for example for certain cookies or marketing communications.</li>
-        <li>Contract performance — to provide features you request.</li>
-        <li>Legitimate interests — to operate and improve the Service, secure our systems, and prevent abuse.</li>
-      </ul>
+        <h4>B. Data du selv leverer</h4>
+        <p>Favoritter (station-id'er og navne) og prisalarmer (brændstoftype og målpris). Disse gemmes lokalt via <code>shared_preferences</code> eller i Supabase, hvis synkronisering er aktiveret.</p>
 
-      <h2>6. Data retention</h2>
-      <p class="small">We retain personal data only for as long as necessary to provide the Service, comply with legal obligations, resolve disputes, and enforce our agreements. Aggregated or anonymized data may be retained indefinitely.</p>
+        <h4>C. Enheds- og brugsdata (automatisk indsamlet)</h4>
+        <p>Nedbrudsrapporter og telemetri kun hvis du aktiverer fejloplysninger. Ingen adfærdsanalyse som standard.</p>
 
-      <h2>7. Your rights</h2>
-      <p class="small">Subject to local law, you may have rights including access to your personal data, rectification, erasure, restriction of processing, objection to processing, and data portability. If you are in the EEA, you may also have the right to withdraw consent at any time.</p>
+        <h4>D. Intet kamera / mikrofon / fotobibliotek</h4>
+        <p>Appen anmoder ikke om adgang til disse ressourcer. Hvis funktionalitet ændres, opdaterer vi politikken og Info.plist.</p>
 
-      <h2>8. Children</h2>
-      <p class="small">The Service is not intended for children under 13. We do not knowingly collect personal information from children under the applicable age. If you believe a child has provided us personal information, please contact us to request deletion.</p>
+        <h3>2. Hvordan vi bruger dine data</h3>
+        <p>Vi bruger oplysninger til at levere kort- og lokalitetsfunktioner, gemme/få adgang til favoritter og prisalarmer, og forbedre stabilitet via nedbrudsrapporter (hvis aktiveret). Vi sælger ikke dine personoplysninger.</p>
 
-      <h2>9. Security</h2>
-      <p class="small">We take reasonable technical and organizational measures to help protect personal information, but no internet transmission or storage can be guaranteed to be 100% secure.</p>
+        <h3>3. Tredjepartstjenester og databehandlere</h3>
+        <ul>
+          <li><strong>Supabase</strong> — valgfri backend-lagring til favoritter og alarmer. Hosting/region: EU. Se <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase privacy</a>.</li>
+          <li><strong>Google Maps</strong> — viser kortfliser og markører; Google kan modtage IP og kortbrugsdata. Se <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google privacy</a>.</li>
+          <li><strong>Geolocator</strong> (Flutter-plugin) — anmoder om systemtilladelse og returnerer koordinater lokalt.</li>
+        </ul>
 
-      <h2>10. International transfers</h2>
-      <p class="small">We may transfer information to servers or service providers located in countries outside your country of residence. When we do so, we will protect the transferred data in accordance with this Privacy Policy and applicable law.</p>
+        <h3>4. Hvor og hvordan vi gemmer data</h3>
+        <p>Lokal lagring: <code>shared_preferences</code> (favoritter, indstillinger). Server-side: Supabase hvis synkronisering aktiveret. Overførsler kan finde sted uden for dit land; kontakt os for hostingdetaljer.</p>
 
-      <h2>11. Changes to this policy</h2>
-      <p class="small">We may update this Privacy Policy from time to time. When we do, we will revise the "Effective date" at the top of the page. Continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+        <h3>5. Retligt grundlag for behandling (GDPR)</h3>
+        <p>For EEA-brugere behandles data primært på baggrund af samtykke. Du kan trække samtykke tilbage ved at slå tilladelsen fra eller slette dine data/konto.</p>
 
-      <h2>12. Contact</h2>
-      <p class="small">If you have questions or requests regarding this Privacy Policy or your data, please contact: <a href="mailto:privacy@uitdev.dk">privacy@uitdev.dk</a>.</p>
+        <h3>6. Dine rettigheder</h3>
+        <p>Ret til indsigt, berigtigelse, sletning, begrænsning, dataportabilitet og tilbagekaldelse af samtykke. Kontakt: <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a>.</p>
 
-      <footer>
-        <div class="small">This policy was last updated on 2025-12-01.</div>
-      </footer>
-    </section>
+        <h3>7. Sådan styrer du tilladelser på din enhed</h3>
+        <p>iOS: Indstillinger → Privatliv → Lokalitetstjenester → vælg "TankBilligt" og ændr tilladelse. Appen kan åbne systemindstillinger (via `app.openAppSettings()`).</p>
 
-  </main>
+        <h3>8. Sikkerhed</h3>
+        <p>Vi anvender rimelige tekniske og organisatoriske foranstaltninger, herunder kryptering under overførsel (HTTPS).</p>
+
+        <h3>9. Opbevaring af data</h3>
+        <p>Lokale indstillinger og favoritter opbevares indtil sletning. Server-synkroniserede data opbevares indtil sletning eller efter dine Supabase-indstillinger.</p>
+
+        <h3>10. Børn</h3>
+        <p>Appen er ikke rettet mod børn under 13 år. Kontakt os hvis du mener, vi har indsamlet oplysninger om et barn.</p>
+
+        <h3>11. Ændringer til denne politik</h3>
+        <p>Vi kan opdatere politikken; væsentlige ændringer offentliggøres i Appen eller ved opdateret ikrafttrædelsesdato.</p>
+
+        <h3>12. Links til tredjepartstjenester</h3>
+        <p>Politikken dækker ikke tredjepartstjenesters politikker; læs deres privatlivspolitikker separat.</p>
+
+        <h3>13. Yderligere oplysninger specifikt for iOS</h3>
+        <p>Info.plist indeholder <code>NSLocationWhenInUseUsageDescription</code> og vi anmoder kun om "Kun ved brug af appen". App Tracking Transparency (ATT) anvendes ikke, medmindre sporing tilføjes.</p>
+
+        <h3>14. Kontakt og klager</h3>
+        <p>Kontakt: <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a>. EU/EEA-brugere kan klage til lokal databeskyttelsesmyndighed.</p>
+
+        <h3>15. Publicering og linkning af denne politik</h3>
+        <p>Indsæt denne politik-URL i App Store Connect og i appens Indstillinger / Om-sektionen.</p>
+
+        <footer>
+          Sidst opdateret: 1. december 2025
+        </footer>
+      </article>
+
+      <article id="en" lang="en" hidden>
+        <h2>Privacy Policy — TankBilligt (English)</h2>
+        <p>Effective date: 1 December 2025</p>
+
+        <p>This privacy policy explains how TankBilligt ("we", "us" or "the App") collects, uses, shares, and protects information when you use our mobile application "TankBilligt" ("App"). TankBilligt helps users in Denmark find and compare fuel prices and locate nearby gas stations.</p>
+
+        <h3>Contact</h3>
+        <p>Data Controller: UIT<br/>Email: <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a></p>
+
+        <h3>Overview — short summary</h3>
+        <ul>
+          <li>Purpose: The App shows nearby gas stations, current prices, and route guidance; allows favorites and price alerts.</li>
+          <li>Key data: Your device location (only with permission) and the data you explicitly save (favorites, alerts).</li>
+          <li>Third parties: Supabase, Google Maps, and Geolocator.</li>
+        </ul>
+
+        <h3>1. What information we collect</h3>
+        <h4>A. Location (required for core features)</h4>
+        <p>Precise device location (GPS and network-based coordinates) while the App is in use and you have granted permission. Location is used during the session for map features. If you save a location (e.g., a favorite), it is stored in your Supabase record or locally.</p>
+
+        <h4>B. Data you provide</h4>
+        <p>Favorites (station IDs and optional custom names) and price alerts (fuel type and target price). These are stored locally via <code>shared_preferences</code> or in Supabase if synchronization is enabled.</p>
+
+        <h4>C. Device and usage data (automatically collected)</h4>
+        <p>Crash reports and basic telemetry only if you enable error reporting. No behavioral analytics or tracking by default.</p>
+
+        <h4>D. No camera / microphone / photo library</h4>
+        <p>The App does not request access to camera, microphone, or photo library. If features are added that require these, we will update this policy and Info.plist.</p>
+
+        <h3>2. How we use your data</h3>
+        <p>We use collected information to provide map and location-based features, save and retrieve your favorites and price alerts, and improve app stability via crash reports (if enabled). We do not sell your personal data.</p>
+
+        <h3>3. Third-party services and processors</h3>
+        <ul>
+          <li><strong>Supabase</strong> — optional backend storage for favorites and alerts. Hosting/region: EU. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase privacy</a>.</li>
+          <li><strong>Google Maps</strong> — displays map tiles and markers; Google may receive IP and map usage data. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google privacy</a>.</li>
+          <li><strong>Geolocator</strong> (Flutter plugin) — requests system permission and returns coordinates locally.</li>
+        </ul>
+
+        <h3>4. Where and how we store data</h3>
+        <p>Local storage: <code>shared_preferences</code> (favorites, settings). Server-side: Supabase if synchronization is enabled. Data may be transferred outside your country; contact us for hosting details.</p>
+
+        <h3>5. Legal basis for processing (GDPR)</h3>
+        <p>For EEA users, processing is primarily based on consent. You may withdraw consent by disabling permission or deleting your data/account.</p>
+
+        <h3>6. Your rights</h3>
+        <p>Right of access, rectification, erasure, restriction, data portability, and withdrawal of consent. Contact: <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a>.</p>
+
+        <h3>7. How to manage permissions on your device</h3>
+        <p>iOS: Settings → Privacy → Location Services → choose "TankBilligt" and change permission. The App can open system settings (via <code>app.openAppSettings()</code>).</p>
+
+        <h3>8. Security</h3>
+        <p>We implement reasonable technical and organizational measures, including encryption in transit (HTTPS).</p>
+
+        <h3>9. Data retention</h3>
+        <p>Local settings and favorites are kept until you delete them. Server-synced data is stored until you delete it or per your Supabase settings.</p>
+
+        <h3>10. Children</h3>
+        <p>The App is not directed to children under 13 years. Contact us if you believe we have collected data about a child.</p>
+
+        <h3>11. Changes to this policy</h3>
+        <p>We may update this policy to reflect changes; material changes will be published in the App or via an updated effective date.</p>
+
+        <h3>12. Links to third-party services</h3>
+        <p>This policy does not cover third-party practices; read their privacy policies separately.</p>
+
+        <h3>13. Additional information specific to iOS</h3>
+        <p>Info.plist includes <code>NSLocationWhenInUseUsageDescription</code>; we request "When In Use" location only. App Tracking Transparency (ATT) is not used unless tracking/ads are added.</p>
+
+        <h3>14. Contact and complaints</h3>
+        <p>Contact: <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a>. EU/EEA users may complain to their data protection authority.</p>
+
+        <h3>15. Publishing and linking this policy</h3>
+        <p>Provide this policy URL in App Store Connect and in the app's Settings / About section.</p>
+
+        <footer>
+          Last updated: 1 December 2025
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      const btnDa = document.getElementById('btn-da');
+      const btnEn = document.getElementById('btn-en');
+      const elDa = document.getElementById('da');
+      const elEn = document.getElementById('en');
+      const PKEY = 'tb_lang';
+      function setLang(lang){
+        if(lang === 'da'){
+          elDa.hidden = false;
+          elEn.hidden = true;
+          btnDa.classList.add('active');
+          btnEn.classList.remove('active');
+          document.documentElement.lang = 'da';
+        } else {
+          elDa.hidden = true;
+          elEn.hidden = false;
+          btnEn.classList.add('active');
+          btnDa.classList.remove('active');
+          document.documentElement.lang = 'en';
+        }
+        localStorage.setItem(PKEY, lang);
+      }
+      btnDa.addEventListener('click', ()=> setLang('da'));
+      btnEn.addEventListener('click', ()=> setLang('en'));
+      // initialize from localStorage or prefer browser language
+      const saved = localStorage.getItem(PKEY);
+      if(saved) setLang(saved);
+      else {
+        const navLang = (navigator.language||'').toLowerCase();
+        setLang(navLang.startsWith('da') ? 'da' : 'en');
+      }
+    })();
+  </script>
 </body>
 </html>
