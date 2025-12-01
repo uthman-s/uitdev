@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support — TankBilligt</title>
+  <style>
+    :root{
+      --bg:#f7f8fb; --card:#fff; --text:#0f1724; --muted:#51606a;
+      --accent:#0b63c6;
+    }
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg); color:var(--text); margin:0; padding:24px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:900px; margin:0 auto;}
+    header{display:flex; gap:8px; align-items:center; justify-content:space-between; margin-bottom:16px;}
+    .lang-switch{display:flex; gap:8px;}
+    button{
+      background:#fff; border:1px solid #d0d7de; padding:8px 12px; border-radius:6px; cursor:pointer;
+    }
+    button.active{background:var(--accent); color:#fff; border-color:var(--accent);}
+    .card{background:var(--card); padding:20px; border-radius:10px; box-shadow:0 1px 2px rgba(16,24,40,0.04);}
+    h1{font-size:1.25rem; margin:0 0 8px 0;}
+    h2{font-size:1rem; margin-top:18px;}
+    h3{font-size:0.95rem; margin-top:16px;}
+    p{color:var(--muted); line-height:1.5;}
+    ul{color:var(--muted); line-height:1.5;}
+    a{color:var(--accent); text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    nav small{color:var(--muted);}
+    .meta{font-size:0.9rem; color:var(--muted); margin-bottom:12px;}
+    footer{margin-top:18px; font-size:0.85rem; color:var(--muted);}
+    @media (prefers-color-scheme:dark){
+      :root{--bg:#071024; --card:#07182a; --text:#e6eef8; --muted:#9fb3d6; --accent:#3aa0ff;}
+      button{background:transparent; border-color:rgba(255,255,255,0.08);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 id="page-title">Support — TankBilligt</h1>
+        <div class="meta" id="effective-date">Last updated / Senest opdateret: 1. december 2025</div>
+      </div>
+      <div class="lang-switch" role="tablist" aria-label="Language switch">
+        <button id="btn-da" aria-controls="da">Dansk</button>
+        <button id="btn-en" aria-controls="en">English</button>
+      </div>
+    </header>
+
+    <main class="card">
+      <article id="da" lang="da">
+        <h2>Support — TankBilligt (Dansk)</h2>
+        <p>Velkommen til TankBilligt support-siden. Her finder du information om, hvordan du får hjælp med appen.</p>
+
+        <h3>Kontakt Support</h3>
+        <p>Hvis du har brug for hjælp eller har spørgsmål om TankBilligt, kan du kontakte os via:</p>
+        <p><strong>E-mail:</strong> <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a></p>
+        <p>Vi bestræber os på at svare på alle henvendelser inden for 1-2 hverdage.</p>
+
+        <h3>Ofte Stillede Spørgsmål</h3>
+        
+        <h4>Hvordan bruger jeg appen?</h4>
+        <p>TankBilligt hjælper dig med at finde og sammenligne benzinpriser i Danmark. Appen viser nærliggende tankstationer med aktuelle priser og giver dig mulighed for at gemme dine foretrukne stationer.</p>
+
+        <h4>Hvorfor viser appen ikke min placering?</h4>
+        <p>Appen har brug for din tilladelse til at bruge placeringstjenester. Gå til din enheds Indstillinger → Privatliv → Lokalitetstjenester → TankBilligt og sørg for, at tilladelsen er aktiveret.</p>
+
+        <h4>Hvordan gemmer jeg en favorit tankstation?</h4>
+        <p>Find den ønskede tankstation på kortet eller i listen, og tryk på stjerneikonet for at tilføje den til dine favoritter.</p>
+
+        <h4>Hvordan fungerer prisalarmer?</h4>
+        <p>Du kan indstille en prisalarm for en bestemt brændstoftype. Når prisen falder til eller under din målpris, vil du modtage en notifikation.</p>
+
+        <h3>Rapportér et Problem</h3>
+        <p>Hvis du oplever tekniske problemer med appen, bedes du kontakte os på <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a> med følgende information:</p>
+        <ul>
+          <li>Din enhedstype (fx iPhone 14, iPad Pro)</li>
+          <li>iOS-version</li>
+          <li>App-version (findes under Indstillinger i appen)</li>
+          <li>En beskrivelse af problemet</li>
+        </ul>
+
+        <h3>Fortrolighedspolitik</h3>
+        <p>Læs vores <a href="/privacy/">fortrolighedspolitik</a> for at lære mere om, hvordan vi beskytter dine data.</p>
+
+        <h3>Om TankBilligt</h3>
+        <p>TankBilligt er udviklet af UIT med det formål at hjælpe danske bilister med at finde de bedste benzinpriser og spare penge på brændstof.</p>
+
+        <footer>
+          Sidst opdateret: 1. december 2025
+        </footer>
+      </article>
+
+      <article id="en" lang="en" hidden>
+        <h2>Support — TankBilligt (English)</h2>
+        <p>Welcome to the TankBilligt support page. Here you will find information on how to get help with the app.</p>
+
+        <h3>Contact Support</h3>
+        <p>If you need help or have questions about TankBilligt, you can contact us via:</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a></p>
+        <p>We strive to respond to all inquiries within 1-2 business days.</p>
+
+        <h3>Frequently Asked Questions</h3>
+        
+        <h4>How do I use the app?</h4>
+        <p>TankBilligt helps you find and compare fuel prices in Denmark. The app shows nearby gas stations with current prices and allows you to save your preferred stations.</p>
+
+        <h4>Why doesn't the app show my location?</h4>
+        <p>The app needs your permission to use location services. Go to your device's Settings → Privacy → Location Services → TankBilligt and make sure the permission is enabled.</p>
+
+        <h4>How do I save a favorite gas station?</h4>
+        <p>Find the desired gas station on the map or in the list, and tap the star icon to add it to your favorites.</p>
+
+        <h4>How do price alerts work?</h4>
+        <p>You can set a price alert for a specific fuel type. When the price drops to or below your target price, you will receive a notification.</p>
+
+        <h3>Report a Problem</h3>
+        <p>If you experience technical issues with the app, please contact us at <a href="mailto:contact@uitdev.dk">contact@uitdev.dk</a> with the following information:</p>
+        <ul>
+          <li>Your device type (e.g., iPhone 14, iPad Pro)</li>
+          <li>iOS version</li>
+          <li>App version (found under Settings in the app)</li>
+          <li>A description of the problem</li>
+        </ul>
+
+        <h3>Privacy Policy</h3>
+        <p>Read our <a href="/privacy/">privacy policy</a> to learn more about how we protect your data.</p>
+
+        <h3>About TankBilligt</h3>
+        <p>TankBilligt is developed by UIT with the purpose of helping Danish drivers find the best fuel prices and save money on fuel.</p>
+
+        <footer>
+          Last updated: 1 December 2025
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      const btnDa = document.getElementById('btn-da');
+      const btnEn = document.getElementById('btn-en');
+      const elDa = document.getElementById('da');
+      const elEn = document.getElementById('en');
+      const PKEY = 'tb_lang';
+      function setLang(lang){
+        if(lang === 'da'){
+          elDa.hidden = false;
+          elEn.hidden = true;
+          btnDa.classList.add('active');
+          btnEn.classList.remove('active');
+          document.documentElement.lang = 'da';
+        } else {
+          elDa.hidden = true;
+          elEn.hidden = false;
+          btnEn.classList.add('active');
+          btnDa.classList.remove('active');
+          document.documentElement.lang = 'en';
+        }
+        localStorage.setItem(PKEY, lang);
+      }
+      btnDa.addEventListener('click', ()=> setLang('da'));
+      btnEn.addEventListener('click', ()=> setLang('en'));
+      // initialize from localStorage or prefer browser language
+      const saved = localStorage.getItem(PKEY);
+      if(saved) setLang(saved);
+      else {
+        const navLang = (navigator.language||'').toLowerCase();
+        setLang(navLang.startsWith('da') ? 'da' : 'en');
+      }
+    })();
+  </script>
+</body>
+</html>
